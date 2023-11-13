@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "235343260790",
+    "firebase_url": "https://triple-s-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "triple-s-app",
+    "storage_bucket": "triple-s-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235343260790:android:1cfd6af5591b3106700357",
+        "android_client_info": {
+          "package_name": "com.example.triplesagent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235343260790-8ktqeiohe42n6h3kjsgcmirmetthblle.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.triplesagent",
+            "certificate_hash": "1a4c509bcbd5eeadbe7e8a82341d7b84ff5c67b2"
+          }
+        },
+        {
+          "client_id": "235343260790-900avbkjbqp1eoi8lmo1j6r33ubenoen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQI6G6B7XsuVvFhk4b1CSJvi1x4Q2mA-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235343260790-2eogkm8ucpevl39oeutlsub5l6ji6vsc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

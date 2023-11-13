@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#000000" /> <!-- Fill color of the rectangle -->
+    <corners android:radius="20dp" /> <!-- Corner radius in density-independent pixels (dp) -->
+    <stroke
+        android:width="2dp"
+        android:color="#fe6212" />
+</shape>
