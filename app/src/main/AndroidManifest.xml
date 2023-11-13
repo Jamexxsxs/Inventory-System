@@ -16,18 +16,13 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
 
-        <activity
-            android:name=".main"
-            android:label="@string/app_name"
+        <activity android:name=".Nav"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".auth" />
-        <activity android:name=".menu.tabs" />
-
     </application>
 
 </manifest>
