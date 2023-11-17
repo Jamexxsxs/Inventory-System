@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_table_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="HELLO"
+        android:textColor="#050505"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="HELLO"
+        android:textStyle="bold"
+        android:textColor="#050505"
+        android:gravity="left"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#050505"
+        android:gravity="left"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="HELLO"
+        android:textStyle="bold"
+        android:textColor="#050505"
+        android:gravity="left"
+        android:layout_gravity="center"
+        />
+
+</TableRow>

@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f5f5f5">
+    android:background="#F5F5F5">
 
     <LinearLayout
         android:id="@+id/header_title"
@@ -28,26 +28,23 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck">
-
-        </TextView>
+            tools:ignore="TextContrastCheck"/>
 
         <TextView
             android:id="@+id/manage_product"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#8EBBFF"
             android:clickable="true"
             android:focusable="true"
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="20dp"
             android:text="MANAGE PRODUCTS"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="TextContrastCheck">
+            android:textStyle="bold">
+
 
         </TextView>
 
@@ -57,14 +54,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
+            android:focusable="true"
             android:fontFamily="monospace"
+            android:gravity="center"
+            android:padding="20dp"
             android:text="ADD PRODUCT"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:focusable="true"
-            android:gravity="center"
-            android:padding="20dp">
+            tools:ignore="TextContrastCheck">
 
         </TextView>
 
@@ -76,15 +74,127 @@
             android:clickable="true"
             android:fontFamily="monospace"
             android:text="SALES REPORT"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
             android:focusable="true"
             android:gravity="center"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:background="#8EBBFF"
+            tools:ignore="TextContrastCheck">
 
 
         </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/sales"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/blue"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="monospace"
+                android:text="Daily Sales"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="15dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/sales_number"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="monospace"
+                android:text="₱0"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="15dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/purchase"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:fontFamily="monospace"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/blue"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="monospace"
+                android:text="Daily Purchase"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="15dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/purchase_number"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:fontFamily="monospace"
+                android:text="₱0"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="15dp">
+
+            </TextView>
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -116,16 +226,16 @@
                     <TextView
                         android:layout_weight="1"
                         android:padding="8dp"
+                        android:text="DATE"
+                        android:textColor="#050505"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="#CCC"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="8dp"
                         android:text="PRODUCT NAME"
-                        android:textColor="#050505"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:background="#CCC"/>
-
-                    <TextView
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="PURCHASE PRICE"
                         android:textStyle="bold"
                         android:textColor="#050505"
                         android:gravity="center"
@@ -134,7 +244,7 @@
                     <TextView
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:text="GROSS SALE"
+                        android:text="PRODUCT PRICE"
                         android:textStyle="bold"
                         android:textColor="#050505"
                         android:gravity="center"
@@ -152,25 +262,7 @@
                     <TextView
                         android:layout_weight="1"
                         android:padding="8dp"
-                        android:text="SALE PRICE"
-                        android:textStyle="bold"
-                        android:textColor="#050505"
-                        android:gravity="center"
-                        android:background="#CCC"/>
-
-                    <TextView
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="OPTION"
-                        android:textStyle="bold"
-                        android:textColor="#050505"
-                        android:gravity="center"
-                        android:background="#CCC"/>
-
-                    <TextView
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="OPTION"
+                        android:text="SUB TOTAL"
                         android:textStyle="bold"
                         android:textColor="#050505"
                         android:gravity="center"
@@ -182,4 +274,5 @@
         </ScrollView>
 
     </LinearLayout>
+
 </LinearLayout>

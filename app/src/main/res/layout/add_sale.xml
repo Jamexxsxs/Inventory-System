@@ -25,7 +25,8 @@
             android:gravity="center"
             android:padding="20dp"
             android:text="ADD SALE"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:background="#8EBBFF"
             android:textSize="24sp"
             android:textStyle="bold"
             tools:ignore="TextContrastCheck">
@@ -37,17 +38,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#8EBBFF"
             android:clickable="true"
             android:focusable="true"
             android:fontFamily="monospace"
             android:gravity="center"
             android:padding="20dp"
             android:text="MANAGE PRODUCTS"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="TextContrastCheck">
+            android:textStyle="bold">
 
         </TextView>
 
@@ -88,98 +87,156 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="150dp"
         android:orientation="horizontal">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp">
 
             <TableLayout
                 android:id="@+id/table_layout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="16dp">
+                android:layout_height="match_parent">
 
                 <!-- Table Header -->
                 <TableRow
                     android:id="@+id/table_row"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginRight="0dp">
+                    android:layout_marginTop="10dp">
 
                     <TextView
                         android:layout_weight="1"
+                        android:background="#CCC"
+                        android:gravity="center"
                         android:padding="8dp"
                         android:text="PRODUCT NAME"
                         android:textColor="#050505"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:background="#CCC"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_weight="1"
+                        android:background="#CCC"
+                        android:gravity="center"
                         android:padding="8dp"
-                        android:text="PURCHASE PRICE"
-                        android:textStyle="bold"
+                        android:text="PRODUCT PRICE"
                         android:textColor="#050505"
-                        android:gravity="center"
-                        android:background="#CCC"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="GROSS SALE"
-                        android:textStyle="bold"
-                        android:textColor="#050505"
+                        android:background="#CCC"
                         android:gravity="center"
-                        android:background="#CCC"/>
-
-                    <TextView
-                        android:layout_weight="1"
                         android:padding="8dp"
                         android:text="QUANTITY"
-                        android:textStyle="bold"
                         android:textColor="#050505"
-                        android:gravity="center"
-                        android:background="#CCC"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="SALE PRICE"
-                        android:textStyle="bold"
-                        android:textColor="#050505"
+                        android:background="#CCC"
                         android:gravity="center"
-                        android:background="#CCC"/>
+                        android:padding="8dp"
+                        android:text="SUBTOTAL"
+                        android:textColor="#050505"
+                        android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="OPTION"
-                        android:textStyle="bold"
-                        android:textColor="#050505"
-                        android:gravity="center"
-                        android:background="#CCC"/>
-
-                    <TextView
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="OPTION"
-                        android:textStyle="bold"
-                        android:textColor="#050505"
-                        android:gravity="center"
-                        android:background="#CCC"/>
 
                 </TableRow>
 
             </TableLayout>
         </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="CLEAR"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#E65C4F"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="ADD"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#facf58"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="DONE"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#6BD"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="monospace"
+            android:padding="20dp"
+            android:text="₱0"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#d1c9c9"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
 </LinearLayout>
